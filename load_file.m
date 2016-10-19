@@ -99,7 +99,7 @@ while 1
         gyroscopez = eval(char(data(3)));
         
         time = strsplit(char(data(4)));
-        gyroscopel_date = [gyroscope_date; char(time(2))];
+        gyroscope_date = [gyroscope_date; char(time(2))];
         gyroscope_hour = [gyroscope_hour; char(time(3))];
         gyroscope = [gyroscope; [gyroscopex, gyroscopey, gyroscopez]];
     else
