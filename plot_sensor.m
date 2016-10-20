@@ -7,4 +7,4 @@ title_str = strcat(strcat(sensor{2}(1,:),'-'),sensor_name);
 title(title_str)
 xlabel('time')
 ylabel(strcat(sensor_name,' values'))
-print(fig, strcat(directory_to_save,title_str,'-dpng')
+print(fig, strcat(directory_to_save,title_str),'-dpng')
