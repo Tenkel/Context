@@ -1,0 +1,9 @@
+function [hour_num] = hour2num(time)
+
+hour_num = [];
+for i=1:length(time)
+    hour_num = [hour_num; (str2double(time{i}(12))*10 + str2double(time{i}(13))) + ...
+        (str2double(time{i}(15))*10 + str2double(time{i}(16)))/60 + ...
+        (str2double(time{i}(18))*10 + str2double(time{i}(19)))/3600 + ...
+        (str2double(time{i}(21))/10 + str2double(time{i}(22))/100 + str2double(time{i}(23))/1000)/3600];
+end
